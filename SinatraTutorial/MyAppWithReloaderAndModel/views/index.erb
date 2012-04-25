@@ -1,0 +1,24 @@
+<h1>Products</h1>
+<table>
+  <tr>
+    <td>
+      Name
+    </td>
+    <td>
+      Description
+    </td>
+  </tr>
+<% @products.each do |product| %>
+  <tr>
+    <td>
+      <%= product[:name] %>
+    </td>
+    <td>
+      <%= product[:description] %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<a href="/new-monkey-product">New Monkey Product</a>
+<br/>
+<a href="/delete-monkey-products">Delete Monkey Products</a>
